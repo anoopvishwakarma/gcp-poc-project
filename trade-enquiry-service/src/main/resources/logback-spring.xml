@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+	<include resource="org/springframework/boot/logging/logback/console-apender.xml"/>
+	<include resource="org/springframework/cloud/gcp/logging/logback-apender.xml"/>
+	
+	<root level="INFO">
+		<appender-ref ref="CONSOLE"/>
+		<appender-ref ref="STACKDRIVER"/>
+	</root>
+</configuration>
